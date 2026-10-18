@@ -11,12 +11,14 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "tb_missoes")
+@ToString
 public class MissoesModel {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
